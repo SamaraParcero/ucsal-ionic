@@ -1,0 +1,14 @@
+<ion-view view-title="{{noticia.categoria}}">
+  <ion-content class="fundo">
+    <div class="capa">
+      <img ng-src="{{noticia.imagem}}">
+    </div>
+
+    <div class="artigo">
+      <span class="tag" ng-class="{evento: noticia.categoria == 'Evento'}">{{noticia.categoria}}</span>
+      <h1>{{noticia.titulo}}</h1>
+      <small>Publicado em {{noticia.data}}</small>
+      <p>{{noticia.conteudo}}</p>
+    </div>
+  </ion-content>
+</ion-view>

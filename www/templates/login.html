@@ -1,0 +1,20 @@
+<ion-view hide-nav-bar="true">
+  <ion-content class="login" scroll="false">
+    <div class="bola"></div>
+
+    <div class="login-conteudo">
+      <span class="selo">UCSal</span>
+      <h1>Olá,<br>estudante.</h1>
+      <p class="sub">Entre com sua matrícula para acessar o portal.</p>
+
+      <input class="campo" type="text" placeholder="Matrícula" ng-model="dados.matricula">
+      <input class="campo" type="password" placeholder="Senha" ng-model="dados.senha">
+
+      <p class="erro" ng-show="erro">{{erro}}</p>
+
+      <button class="button button-block botao" ng-click="entrar()">Entrar</button>
+
+      <p class="dica">teste: 20261001 / 123456</p>
+    </div>
+  </ion-content>
+</ion-view>

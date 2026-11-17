@@ -1,0 +1,396 @@
+:root {
+  --marinho: #0b2545;
+  --marinho-claro: #1d3f6e;
+  --mostarda: #d4a017;
+  --branco: #ffffff;
+  --fundo: #f4f1ea;
+  --verde: #2e9e5b;
+}
+
+body,
+h1, h2, h3, h4,
+input, select, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fundo {
+  background: var(--fundo);
+}
+
+.barra.bar,
+.bar.barra {
+  background: var(--marinho);
+  background-image: none;
+  border: none;
+}
+
+.barra .title,
+.barra .button {
+  color: var(--branco) !important;
+}
+
+.botao {
+  background: var(--mostarda);
+  color: var(--marinho);
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.botao.activated {
+  background: var(--marinho);
+  color: var(--mostarda);
+}
+
+.abas .tabs {
+  background: var(--marinho);
+  background-image: none;
+  border-top: 3px solid var(--mostarda);
+}
+
+.abas .tab-item {
+  color: #8fa3c4;
+  opacity: 1;
+}
+
+.abas .tab-item.tab-item-active {
+  color: var(--mostarda);
+}
+
+.login {
+  background: var(--marinho);
+}
+
+.bola {
+  position: absolute;
+  top: -90px;
+  right: -90px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: var(--mostarda);
+}
+
+.login-conteudo {
+  position: relative;
+  padding: 140px 30px 0;
+  color: var(--branco);
+}
+
+.selo {
+  border: 2px solid var(--mostarda);
+  color: var(--mostarda);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.login-conteudo h1 {
+  color: var(--branco);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 24px 0 10px;
+}
+
+.sub {
+  color: #b9c6dc;
+  margin-bottom: 30px;
+}
+
+.campo {
+  width: 100%;
+  background: transparent !important;
+  border-bottom: 2px solid #3d5a85 !important;
+  color: var(--branco) !important;
+  font-size: 16px;
+  padding: 10px 0 !important;
+  margin-bottom: 18px;
+}
+
+.campo:focus {
+  border-bottom-color: var(--mostarda) !important;
+}
+
+.erro {
+  color: #ffb4a8;
+  font-size: 14px;
+}
+
+.dica {
+  text-align: center;
+  color: #6f83a6;
+  font-size: 12px;
+}
+
+.topo {
+  background: var(--marinho);
+  color: var(--branco);
+  padding: 16px 20px 40px;
+  border-radius: 0 0 30px 30px;
+}
+
+.topo p {
+  color: #b9c6dc;
+  margin: 0;
+}
+
+.topo h2 {
+  color: var(--branco);
+  font-weight: 700;
+  margin: 2px 0 0;
+}
+
+.centro {
+  text-align: center;
+}
+
+.chips {
+  margin: -20px 16px 10px;
+  background: var(--branco);
+  border-radius: 30px;
+  padding: 6px;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chips span {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: 30px;
+  color: var(--marinho);
+  font-size: 14px;
+}
+
+.chips span.ativo {
+  background: var(--marinho);
+  color: var(--mostarda);
+  font-weight: 700;
+}
+
+.post {
+  display: flex;
+  border-radius: 18px;
+  margin: 14px 16px;
+  overflow: hidden;
+}
+
+.post img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.post-info {
+  padding: 12px 14px;
+  flex: 1;
+}
+
+.post-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--marinho);
+  margin: 6px 0 4px;
+}
+
+.post-info small {
+  color: #999;
+}
+
+.ler {
+  display: block;
+  color: var(--mostarda);
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.tag {
+  background: var(--marinho);
+  color: var(--branco);
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.tag.evento {
+  background: var(--mostarda);
+  color: var(--marinho);
+}
+
+.capa img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.artigo {
+  background: var(--branco);
+  margin: -30px 14px 20px;
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.artigo h1 {
+  color: var(--marinho);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+
+.artigo small {
+  color: #999;
+}
+
+.artigo p {
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+.seletor {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  background: var(--mostarda);
+  color: var(--marinho);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.parcela {
+  display: flex;
+  background: var(--branco);
+  margin: 14px 16px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.topo + .parcela {
+  margin-top: -20px;
+}
+
+.mes {
+  width: 70px;
+  background: var(--marinho);
+  color: var(--branco);
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px dashed var(--fundo);
+}
+
+.parcela.aberta .mes {
+  background: var(--mostarda);
+  color: var(--marinho);
+}
+
+.parcela-info {
+  padding: 14px;
+  flex: 1;
+}
+
+.parcela-info h3 {
+  color: var(--marinho);
+  font-weight: 700;
+  margin: 8px 0 0;
+}
+
+.parcela-info small {
+  color: #999;
+}
+
+.status {
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  color: var(--branco);
+}
+
+.status.paga {
+  background: var(--verde);
+}
+
+.status.apagar {
+  background: var(--mostarda);
+  color: var(--marinho);
+}
+
+.codigo {
+  font-family: monospace;
+  font-size: 11px;
+  color: #666;
+  word-break: break-all;
+  background: var(--fundo);
+  padding: 6px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  background: var(--mostarda);
+  color: var(--marinho);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bloco {
+  background: var(--branco);
+  margin: 14px 16px;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.topo + .bloco {
+  margin-top: -20px;
+}
+
+.bloco h4 {
+  color: var(--mostarda);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0 0 6px;
+}
+
+.bloco label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.bloco input {
+  width: 100%;
+  border-bottom: 1px solid #ddd !important;
+  padding: 4px 0 !important;
+  color: var(--marinho);
+  font-size: 15px;
+}
+
+.bloco input[disabled] {
+  background: transparent;
+  color: #aaa;
+  border-bottom-style: dashed !important;
+}
+
+.sair {
+  color: #b3261e !important;
+}
+
+.loading {
+  background: var(--marinho) !important;
+  color: var(--mostarda) !important;
+  border-radius: 30px;
+}

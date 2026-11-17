@@ -1,0 +1,22 @@
+<ion-view view-title="Financeiro">
+  <ion-content class="fundo">
+    <div class="topo">
+      <p>Semestre letivo</p>
+      <select class="seletor" ng-model="filtro.semestre" ng-options="s for s in semestres"></select>
+    </div>
+
+    <div class="parcela" ng-repeat="m in mensalidades | filter:{semestre: filtro.semestre}" ng-class="{aberta: m.status == 'A Pagar'}">
+      <div class="mes">{{m.mes | limitTo:3}}</div>
+      <div class="parcela-info">
+        <span class="status" ng-class="{paga: m.status == 'Paga', apagar: m.status == 'A Pagar'}">{{m.status}}</span>
+        <h3>{{m.valor | currency:'R$ '}}</h3>
+        <small>Vence em {{m.vencimento}}</small>
+
+        <div ng-if="m.status == 'A Pagar'">
+          <p class="codigo">{{m.codigo}}</p>
+          <button class="button button-small botao" ng-click="copiar(m)">Copiar Código de Barras</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

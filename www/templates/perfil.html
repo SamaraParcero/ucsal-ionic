@@ -1,0 +1,43 @@
+<ion-view view-title="Meus dados">
+  <ion-content class="fundo">
+    <div class="topo centro">
+      <div class="avatar">{{aluno.nome.charAt(0)}}</div>
+      <h2>{{aluno.nome}}</h2>
+    </div>
+
+    <div class="bloco">
+      <h4>Instituição</h4>
+      <label>Nome completo</label>
+      <input type="text" ng-model="aluno.nome" ng-disabled="true">
+      <label>Matrícula</label>
+      <input type="text" ng-model="aluno.matricula" ng-disabled="true">
+      <label>Curso</label>
+      <input type="text" ng-model="aluno.curso" ng-disabled="true">
+    </div>
+
+    <div class="bloco">
+      <h4>Contato</h4>
+      <label>E-mail pessoal</label>
+      <input type="email" ng-model="aluno.email">
+      <label>Telefone / WhatsApp</label>
+      <input type="tel" ng-model="aluno.telefone">
+    </div>
+
+    <div class="bloco">
+      <h4>Endereço</h4>
+      <label>CEP</label>
+      <input type="text" ng-model="aluno.cep">
+      <label>Rua</label>
+      <input type="text" ng-model="aluno.rua">
+      <label>Bairro</label>
+      <input type="text" ng-model="aluno.bairro">
+      <label>Cidade</label>
+      <input type="text" ng-model="aluno.cidade">
+    </div>
+
+    <div class="padding">
+      <button class="button button-block botao" ng-click="salvar()">Salvar Alterações</button>
+      <button class="button button-block button-clear sair" ng-click="sair()">Sair da conta</button>
+    </div>
+  </ion-content>
+</ion-view>

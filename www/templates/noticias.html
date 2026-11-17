@@ -1,0 +1,24 @@
+<ion-view view-title="Mural">
+  <ion-content class="fundo">
+    <div class="topo">
+      <p>Bem-vindo(a),</p>
+      <h2>{{aluno.nome}}</h2>
+    </div>
+
+    <div class="chips">
+      <span ng-class="{ativo: filtro.categoria == ''}" ng-click="filtro.categoria = ''">Tudo</span>
+      <span ng-class="{ativo: filtro.categoria == 'Notícia'}" ng-click="filtro.categoria = 'Notícia'">Notícias</span>
+      <span ng-class="{ativo: filtro.categoria == 'Evento'}" ng-click="filtro.categoria = 'Evento'">Eventos</span>
+    </div>
+
+    <div class="card post" ng-repeat="n in noticias | filter:{categoria: filtro.categoria}">
+      <img ng-src="{{n.imagem}}">
+      <div class="post-info">
+        <span class="tag" ng-class="{evento: n.categoria == 'Evento'}">{{n.categoria}}</span>
+        <h3>{{n.titulo}}</h3>
+        <small>{{n.data}}</small>
+        <a class="ler" ng-click="abrir(n)">Ler mais →</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
